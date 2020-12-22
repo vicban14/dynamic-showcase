@@ -1,8 +1,14 @@
 * {
   box-sizing: border-box;
-  margin: 0 20px;
+  margin: 0;
   padding: 0;
   font-family: 'Yeon Sung', normal;
+}
+
+body {
+  width: 100%;
+  background: rgb(255, 70, 70);
+  top: 0;
 }
 
 article {
@@ -20,22 +26,28 @@ h1 + p {
 
 .container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
 }
 
 .menu {
   text-align: center;
+  background-color: rgb(254, 171, 143);
+  border: solid 2px black;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  margin-left: 20px;
 }
 
 .menu > * > * {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .menu-container {
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 50% 50%;
 }
 
 .menu-container > div > img {
-  height: 150px;
+  height: 120px;
 }
