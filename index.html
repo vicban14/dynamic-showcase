@@ -18,49 +18,60 @@
       <h2>Happy Buddha Menu</h2>
       <div class="menu-container">
         <div>
-          <img src="./assets/rice-ball.png" alt="rice-ball">
+          <img src="./assets/rice-ball.png" alt="rice-ball" id="rice-ball">
           <p>Rice Ball: 2.00 €</p>
         </div>
         <div>
-          <img src="./assets/prawn.png" alt="prawns">
+          <img src="./assets/prawn.png" alt="prawns" id="prawns">
           <p>Fried Prawns (2 pieces): 3.00 €</p>
         </div>
         <div>
-          <img src="./assets/salad.png" alt="salad">
+          <img src="./assets/salad.png" alt="salad" id="salad">
           <p>Salad: 1.00 €</p>
         </div>
         <div>
-          <img src="./assets/salmon.png" alt="sashimi-salmon">
+          <img src="./assets/salmon.png" alt="sashimi-salmon" id="salmon">
           <p>Sashimi Salmon (1 piece): 1.50 €</p>
         </div>
         <div>
-          <img src="./assets/tuna-nigiri.png" alt="tuna-nigiri">
+          <img src="./assets/tuna-nigiri.png" alt="tuna-nigiri" id="tuna-nigiri">
           <p>Tuna Nigiri (1 piece): 1.80 €</p>
         </div>
         <div>
-          <img src="./assets/tamago.png" alt="egg-nigiri">
+          <img src="./assets/tamago.png" alt="egg-nigiri" id="egg-nigiri">
           <p>Egg Nigiri (1 piece): 1.00 €</p>
         </div>
         <div>
-          <img src="./assets/prawn-nigiri.png" alt="prown-nigiri">
+          <img src="./assets/prawn-nigiri.png" alt="prown-nigiri" id="prawn-nigiri">
           <p>Prawn Nigiri (1 piece): 1.80 €</p>
         </div>
         <div>
-          <img src="./assets/salmon-nigiri.png" alt="salmon-nigiri">
+          <img src="./assets/salmon-nigiri.png" alt="salmon-nigiri" id="salmon-nigiri">
           <p>Salmon Nigiri (1 piece): 1.80€ </p>
         </div>
         <div>
-          <img src="./assets/ramen.png" alt="ramen">
+          <img src="./assets/ramen.png" alt="ramen" id="ramen">
           <p>Ramen Bowl: 8.00 €</p>
         </div>
         <div>
-          <img src="./assets/complete-bowl.png" alt="complete-bowl">
+          <img src="./assets/complete-bowl.png" alt="complete-bowl" id="complete-bowl">
           <p>Complete bowl: 10.00 €</p>
         </div>
       </div>
     </div>
-    <div class="tray">
-      
+    <img src="./assets/empty-bento-box.png" alt="bento-box" id="bento-box">
+    <div class="tray" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div id="tray">
+        <div class="above-tray-container">
+          <div class="space-tray"></div>
+          <div class="space-tray"></div>
+          <div class="space-tray"></div>
+        </div>
+        <div class="below-tray-container">
+          <div class="space-tray"></div>
+          <div class="space-tray"></div>
+        </div>
+      </div>
     </div>
     <script src="js/main.js"></script>
   </section>

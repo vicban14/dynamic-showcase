@@ -17,22 +17,21 @@ article {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 h1 + p {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 80%;
 }
 
 .menu {
   text-align: center;
   background-color: rgb(254, 171, 143);
-  border: solid 2px black;
   border-radius: 20px;
   margin-bottom: 50px;
   padding: 20px 0;
@@ -49,5 +48,59 @@ h1 + p {
 }
 
 .menu-container > div > img {
-  height: 120px;
+  height: 50px;
+}
+
+#bento-box {
+  height: 640px;
+  margin-left: 5%;
+  z-index: -1;
+}
+
+.tray {
+  position: absolute;
+  margin-left: 32%;
+  height: 354px;
+  width: 500px;
+}
+
+#tray {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+  margin: 40% 0 0 20%;
+}
+
+.above-tray-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.below-tray-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.space-tray {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(91, 18, 29);
+  border: rgb(141, 33, 42) solid 0.9rem;
+}
+
+.space-tray > img {
+  height: 100px;
 }
