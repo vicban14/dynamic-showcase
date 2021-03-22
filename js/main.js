@@ -18,22 +18,26 @@ tray.setAttribute("ondragover", "allowDrop(event)")
 
 function drag(ev) {
   ev.dataTransfer.setData("text", ev.target.id)
-  ev.dataTransfer.effectAllowed = "copy"
+  ev.dataTransfer.effectAllowed = "move"
 }
 
 function drop(ev) {
   ev.preventDefault()
+  let imagen = new Image();
+  imagen.setAttribute('draggable', false);
+  imagen.src = "./assets/" + ev.dataTransfer.getData('Text') + '.png';
+  imagen.onclick = () => { reset() }
   const data = ev.dataTransfer.getData("text")
   const element = document.getElementById(data)
   setFoodInBill(element)
   calculateAndSetTotalAmount()
-  ev.target.appendChild(document.getElementById(data))
-  ev.dataTransfer.dropEffect = "copy"
+  ev.target.appendChild(imagen)
+  ev.dataTransfer.dropEffect = "move"
 }
 
 function allowDrop(ev) {
   ev.preventDefault();
-  ev.dataTransfer.dropEffect = "copy"
+  ev.dataTransfer.dropEffect = "move"
 }
 
 function setFoodInBill(element) {
@@ -87,4 +91,8 @@ function createDescription(element, totalAmount) {
   return totalAmount
     ? document.createTextNode(updateTotalAmountInDescription(totalAmount))
     : document.createTextNode(`${element.dataset.name}: ${element.dataset.price} €`)
+}
+
+function reset() {
+  location.reload()
 }
