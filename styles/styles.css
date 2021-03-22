@@ -64,6 +64,16 @@ h1 + p {
   width: 920px;
 }
 
+button {
+  height: 3em;
+  width: 6em;
+  border-radius: 2em;
+  background: rgb(255, 70, 70);
+  color: rgb(254, 171, 143);
+  border: 0;
+  font-size: 1em;
+}
+
 .space-bowl {
   position: absolute;
   right: 0;
